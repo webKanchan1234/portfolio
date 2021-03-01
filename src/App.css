@@ -144,8 +144,8 @@ nav ul li a{
 
 @media (max-width:991px){
   .contact{
-    padding: 0 100px;
-    margin: 0 100px;
+    padding: 0 10px;
+    margin: 0 10px;
   }
   .main_info{
     display: block;
