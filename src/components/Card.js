@@ -12,15 +12,15 @@ const Card = (props) => {
     return (
         <>
         
-            <div className="col-md-3 col-10 mx-auto">
+            <div className="col-md-3 col-12 mx-auto">
                 <div className="card">
-                {props.imgsrc}
-                     {/* //<img src={props.imgsrc} className="card-img-top" alt={props.imgsrc}/> */}
+                
+                     <img src={props.imgsrc} className="card-img-top" alt={props.imgsrc}/> 
                         <div className="card-body">
-                           <h5 className="text-center font-weight-bold">{props.title}</h5>
-                             <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <h5 className="text-center font-weight-bold mt-2">{props.title}</h5>
+                             <p className="card-text bold-300 text-center ">{props.text} </p>
                              
-                                <a href="#" className="btn btn-primary">Go somewhere</a>
+                                <a href={props.src} className="btn btn-primary btnchek ">Check</a>
                         </div>
                 </div>
             </div>                             

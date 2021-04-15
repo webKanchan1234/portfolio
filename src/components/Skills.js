@@ -42,7 +42,7 @@ const Skills = () => {
                 <div className="row">
                     <div className="col-md-4 col-10 mx-auto">
                         <div className="skl">
-                            <h2 className="">React</h2>
+                            <h2 className="">Reactjs</h2>
                             <h5 className="mt-1">65%</h5>
                         </div>
                         <div className="skills_react"></div>
@@ -53,6 +53,22 @@ const Skills = () => {
                             <h5 className="mt-1">75%</h5>
                         </div>
                         <div className="skills_sql"></div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4 col-10 mx-auto">
+                        <div className="skl">
+                            <h2 className="">ES6</h2>
+                            <h5 className="mt-1">75%</h5>
+                        </div>
+                        <div className="skills_es6"></div>
+                    </div>
+                    <div className="col-md-4 col-10 mx-auto">
+                        <div className="skl">
+                            <h2 className="">bootstrap</h2>
+                            <h5 className="mt-1">80%</h5>
+                        </div>
+                        <div className="skills_boot"></div>
                     </div>
                 </div>
             </div>

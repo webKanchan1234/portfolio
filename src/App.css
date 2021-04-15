@@ -77,10 +77,10 @@ nav ul li a{
 .btn-main-offer{
   border: 1px solid brown;
   text-transform: uppercase;
-  border-radius: 0%;
-  padding:10px 12px 12px 12px;
+  border-radius: 7%;
+  padding: 1px 10px;
   color: white;
-  margin-top: 15px ;
+  margin-top: 1px
 }
 .btn-main-offer:hover{
   text-decoration: none;
@@ -144,22 +144,27 @@ nav ul li a{
 
 @media (max-width:991px){
   .contact{
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 5px 30px;
+    margin: 0 5px;
   }
   .main_info{
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin: 0 0px 0 2px;
+    padding: 0 13px;
+
+    
   }
   .main_info h4{
     font-size: 15px;
     color: white;
+    margin-top: 75px;
   }
   .main_info h1{
     color: white;
+    font-size: 40px;
   }
   .main_info h3{
     font-size: 25px;
@@ -182,19 +187,24 @@ nav ul li a{
     align-items: center;
   }
   .content a{
-    margin-left: 20px;
-    border: 2px solid blue; 
+    margin: 0px 9px;
+    border: 2px solid blue;
+    padding: 0 1px;
+    margin-left: -7px;
   }
   .boximg{
     width: 55%;
-    margin: 0 145px;
+    margin: 0 70px;
+  }
+  .mar{
+    padding: 0 0;
   }
   .content{
     justify-content: center;
     align-items: center;
     display: block;
-    text-align: center;
-    margin:10px 30px;
+    
+    margin:10px 20px;
     width: 90%;
   }
   .content p{
@@ -232,16 +242,25 @@ nav ul li a{
   cursor: pointer;
 }
 .skillbox{
-  background-color: rgb(187, 205, 206);
-  padding: 15px 20px;
+  background-color: #bbcdce;
+    padding: 15px 21px;
+    margin: 0 5px;
+
+}
+.container-xl {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .skills_html{
   width: 80%;
   height: 5px;
   background-color: blue;
-  position: absolute;;
+  position: absolute;
   animation: moving infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0s;
 }
 @keyframes moving{
@@ -257,7 +276,7 @@ nav ul li a{
   height: 5px;
   background-color: blue;
   animation: movingcss infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0s;
 }
 @keyframes movingcss{
@@ -273,8 +292,8 @@ nav ul li a{
   height: 5px;
   background-color: blue;
   animation: movingjs infinite;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-delay: 0s;
 }
 @keyframes movingjs{
   0%{
@@ -289,7 +308,7 @@ nav ul li a{
   height: 5px;
   background-color: blue;
   animation: movingphp infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0s;
 }
 @keyframes movingphp{
@@ -305,7 +324,7 @@ nav ul li a{
   height: 5px;
   background-color: blue;
   animation: movingreact infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0s;
 }
 @keyframes movingreact{
@@ -321,7 +340,7 @@ nav ul li a{
   height: 5px;
   background-color: blue ;
   animation: movingsql infinite;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-delay: 0s;
 }
 @keyframes movingsql{
@@ -332,9 +351,58 @@ nav ul li a{
     width: 75%;
   }
 }
+.skills_es6{
+  width: 75%;
+  height: 5px;
+  background-color: blue ;
+  animation: movingsql infinite;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+@keyframes movingsql{
+  0%{
+    width: 0;
+  }
+  90%{
+    width: 75%;
+  }
+}
+.skills_boot{
+  width: 80%;
+  height: 5px;
+  background-color: blue ;
+  animation: movingsql infinite;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+@keyframes movingsql{
+  0%{
+    width: 0;
+  }
+  90%{
+    width: 80%;
+  }
+}
 
 .skl{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* <!-------------------Specialze------------------------> */
+.font-20{
+  font-size: 30px;
+}
+
+.card-body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.card-body p{
+  color: rgb(22, 24, 22);
+}
+.card-body a{
+  margin-left: 70px;
 }

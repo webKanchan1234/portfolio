@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/react-fontawesome";
 export const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
 <div className="container">
   <a className="navbar-brand" href="#">Portfo<span className="lio">lio</span></a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,18 +19,12 @@ export const Navbar = () => {
         <a className="nav-link" href="#about">about</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#services">services</a>
+        <a className="nav-link" href="#project">Project</a>
       </li>
       <li className="nav-item">
         <a className="nav-link" href="#skill">Skills</a>
       </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Project</a>
-      </li>
       
-      <li className="nav-item">
-        <a className="nav-link" href="#">portfolio</a>
-      </li>
       <li className="nav-item">
         <a className="nav-link" href="#contact">contact</a>
       </li>

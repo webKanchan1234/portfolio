@@ -14,12 +14,12 @@ const Footer = () => {
                     </div>
                     <div className="col-md-3 col-10 mx-auto mt-3">
                         <div className="serv">
-                            <a href="">Home</a> 
-                            <a href="">About</a> <br/>
-                            <a href="">Services</a> 
-                            <a href="">Portfolio</a> <br/>
-                            <a href="">Conract us</a> 
-                            <a href="">Work</a>
+                            <a href="#home">Home</a> 
+                            <a href="#about">About</a> <br/>
+                            <a href="#project">Project</a> 
+                            <a href="#skill">Skills</a> <br/>
+                            <a href="#contact">Contact us</a> 
+                            
                         </div>
                     </div>
                     <div className="col-md-3 col-10 mx-auto ">

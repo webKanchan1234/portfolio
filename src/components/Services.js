@@ -5,8 +5,8 @@ import Card from "./Card";
 const Services = () => {
     return (
         <>
-        <div className="my-5" id="services">
-            <h1 className="text-center">Our services</h1>
+        <div className="my-3" id="project">
+            <h1 className="text-center">My Projects</h1>
         </div>
             <div className="container-fluid mb-5">
                 <div className="row">
@@ -18,6 +18,8 @@ const Services = () => {
                                         key={ind} 
                                         imgsrc={val.imgsrc}
                                         title={val.title}
+                                        text={val.text}
+                                        src={val.src}
                                     />
                                 })
                             }

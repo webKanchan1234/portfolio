@@ -8,6 +8,8 @@ import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
+//import Project from "./components/Project";
+//import Specialize from "./components/Specialize";
 function App() {
   return (
     <>
@@ -33,10 +35,12 @@ function App() {
     />
     <Navbar/>
     <Header/>
+   
     <About/>
     <Services/>
     <Skills/>
     <Contact/>
+    
     <Footer/>
     </>
   );
