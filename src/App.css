@@ -144,13 +144,8 @@ nav ul li a{
 
 @media (max-width:991px){
   .contact{
-<<<<<<< HEAD
     padding: 5px 30px;
     margin: 0 5px;
-=======
-    padding: 0 15px;
-    margin: 0 15px;
->>>>>>> 91305e13ff7b0a76e9d9be9ed4c6c067f4064e0f
   }
   .main_info{
     display: block;
@@ -394,7 +389,6 @@ nav ul li a{
   justify-content: space-between;
   align-items: center;
 }
-<<<<<<< HEAD
 /* <!-------------------Specialze------------------------> */
 .font-20{
   font-size: 30px;
@@ -412,5 +406,3 @@ nav ul li a{
 .card-body a{
   margin-left: 70px;
 }
-=======
->>>>>>> 91305e13ff7b0a76e9d9be9ed4c6c067f4064e0f
