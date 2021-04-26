@@ -13,7 +13,7 @@ const Header = () => {
 
                     strings={[ " Web designer", " Web developer"," React developer"]}
 
-                    strings={[" Web designer", " Web developer"," Android developer","php"]}
+                    // strings={[" Web designer", " Web developer"," Android developer","php"]}
 
                     typeSpeed={40}
                     backSpeed={60}
