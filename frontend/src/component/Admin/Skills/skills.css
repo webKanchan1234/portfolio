@@ -1,0 +1,9 @@
+.dashboard-right{
+    margin: 1vmax;
+}
+.action-cell {
+    /* padding-right: 2vmax;  */
+    cursor: pointer;
+    /* background-color: red; */
+    /* margin: 1vmax;  */
+  }

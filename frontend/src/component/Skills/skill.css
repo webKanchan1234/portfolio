@@ -1,0 +1,12 @@
+.skills-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.skill-bar{
+    width: 40%;
+    margin:  1vmax;
+}

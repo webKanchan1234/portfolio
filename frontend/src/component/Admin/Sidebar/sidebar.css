@@ -1,0 +1,54 @@
+.sidebar-container {
+}
+.menu{
+    float: right;
+    margin: 0.5vmax;
+    cursor: pointer;
+}
+
+.item {
+    background-color: transparent;
+    /* color: white !important; */
+}
+
+.custom-accordion {
+    /* color: white !important; */
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    color: white;
+    /* background-color: red; */
+}
+
+
+.accordion-item {
+    border: none;
+    
+  }
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+    
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    
+}
+.skill-link{
+    /* background-color: red; */
+    /* float: left; */
+    margin: 0.5vmax 0;
+}
+#skill-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#logout{
+    float: left;
+    margin-left: 1vmax;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+#contact{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    color: rgb(174, 171, 171);
+    text-align: center;
+}
+.resume{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.resume:hover{
+    color: #e3a93e !important;
+}
+#mrg{
+    margin-bottom: 0;
+    text-align: center;
+}
+.contact-container{
+    margin:  auto;
+    padding: 2vmax;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    color: white;
+}
+.cont-icon{
+    margin: auto;
+    margin-bottom: 0.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e3a93e;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1vmax;
+    background-color: rgb(87, 111, 123);
+}

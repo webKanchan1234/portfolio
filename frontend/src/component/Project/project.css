@@ -1,0 +1,55 @@
+.project-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2vmax auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0 !important;
+}
+.icon{
+    margin: 0.5vmax;
+}
+#link{
+    color: white;
+    margin: 0.3vmax;
+    transition: 0.5s;
+    
+}
+#link:hover{
+    color: #e9a831;
+}
+#icon{
+    font-size: 2vmax;
+    /* color: #e9a831; */
+}
+
+.card{
+    width: 16rem;
+    margin:1vmax;
+    background-color:rgb(87, 111, 123);
+    color:white
+}
+.card-image{
+    height:200px
+}
+
+@media screen and (max-width:1200px){
+    .card{
+        width: 20rem;
+        margin:1vmax;
+        background-color:rgb(87, 111, 123);
+        color:white
+    }
+    #icon{
+        font-size: 4vmax;
+    }
+    .flex p{
+        font-size: 3vmax;
+    }
+}
