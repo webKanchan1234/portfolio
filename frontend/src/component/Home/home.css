@@ -41,6 +41,12 @@
   background-color: #e3a93e;
   color: white;
   margin-top: 1vmax;
+  transition: 0.5s;
+}
+#cv:hover {
+  background-color:white;
+  color: #db9006;
+  
 }
 
 .home-right {

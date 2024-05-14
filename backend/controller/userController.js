@@ -285,10 +285,12 @@ exports.contactUs = catchAsyncError(async (req, res, next) => {
 
 
 exports.uploadResume = catchAsyncError(async(req,res,next)=>{
+  const user = await User.findOne(req.email)
   const pdf=req.file.filename
-  // console.log(pdf)
-  req.user.resume=pdf
-  req.user.save()
+ 
+  user.resume=pdf
+  await user.save()
+  
   res.status(200).json({
     success: true,
     message: `upload successfully`,
@@ -297,8 +299,10 @@ exports.uploadResume = catchAsyncError(async(req,res,next)=>{
 
 exports.getResume = catchAsyncError(async(req,res,next)=>{
   const user = await User.findOne(req.email)
+  // console.log(user)
+  
   const file = user.resume;
-  //  console.log(file)
+  console.log(user.resume)
   res.download(`./backend/files/${file}`, 'resume.pdf', (err) => {
     if (err) {
       // Handle error (e.g., file not found, permissions issue)

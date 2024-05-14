@@ -6,11 +6,23 @@
     flex-wrap: wrap;
     margin: 2vmax auto;
 }
+.card-body {
+    padding: 0.8vmax;
+}
 .flex{
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     margin: 0 !important;
+}
+.flex p{
+    width: 65%;
+    padding: 0 !important;
+}
+.flex div{
+    width: 35%;
+    display: flex;
+    justify-content: center;
 }
 .icon{
     margin: 0.5vmax;
@@ -31,12 +43,19 @@
 
 .card{
     width: 16rem;
+    /* height: 20rem; */
     margin:1vmax;
     background-color:rgb(87, 111, 123);
     color:white
 }
 .card-image{
-    height:200px
+    height:200px !important;
+}
+.card-image img{
+    height:100% !important;
+}
+.card-text{
+    line-height:  18px !important;
 }
 
 @media screen and (max-width:1200px){

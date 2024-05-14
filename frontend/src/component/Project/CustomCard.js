@@ -15,15 +15,15 @@ const CustomCard = ({props}) => {
                 <Card.Body>
                     <Card.Title>
                         <div className="flex">
-                            <p>{props.title}</p>
+                            <p>{props.title.slice(0,40)}</p>
                             <div >
                                 <Link id='link' to={props.github} target="_blank"><GitHubIcon id="icon"/></Link>
                                 <Link id='link' to={props.url} target="_blank"><LanguageIcon id="icon"/></Link>
                             </div>
                         </div>
                     </Card.Title>
-                    <Card.Text>
-                        {props.description}
+                    <Card.Text className='card-text'>
+                        {props.description.slice(0,50)}
                     </Card.Text>
                 </Card.Body>
             </Card>
