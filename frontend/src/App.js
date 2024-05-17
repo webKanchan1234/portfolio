@@ -14,6 +14,7 @@ import ProtectedRoute from './component/Admin/ProtectedRoute/ProtectedRoute';
 import { useEffect } from 'react';
 import store from "./store"
 import { loadUser } from './actions/userAction';
+import Profile from './component/Admin/Profile/Profile';
 
 function App() {
   const dispatch = useDispatch()
@@ -44,6 +45,7 @@ function App() {
             <Route path="/admin/add-skill" element={<AddSkill />} />
             <Route path="/admin/skills" element={<Skills />} />
             <Route path="/admin/messages" element={<Messages />} />
+            <Route path="/admin/profile" element={<Profile />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />

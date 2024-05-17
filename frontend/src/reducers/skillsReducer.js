@@ -1,4 +1,4 @@
-import { ADD_SKILL_FAIL, ADD_SKILL_REQUEST, ADD_SKILL_SUCCESS, ALL_SKILLS_FAILS, ALL_SKILLS_REQUEST, ALL_SKILLS_SUCCESS } from "../constants/skillsConstant";
+import { ADD_SKILL_FAIL, ADD_SKILL_REQUEST, ADD_SKILL_SUCCESS, ALL_SKILLS_FAILS, ALL_SKILLS_REQUEST, ALL_SKILLS_SUCCESS, DELETE_SKILL_FAIL, DELETE_SKILL_REQUEST, DELETE_SKILL_SUCCESS } from "../constants/skillsConstant";
 
 
 
@@ -39,6 +39,30 @@ export const addSkillReducer = (state={skill:{}},action)=>{
             }
         case ADD_SKILL_FAIL:
             return{
+                loading:false,
+                error:action.payload
+            }
+        default:
+            return state
+    }
+}
+
+export const skillReducer = (state={skill:{}},action)=>{
+    switch(action.type){
+        case DELETE_SKILL_REQUEST:
+            return{
+                ...state,
+                loading:true
+            }
+        case DELETE_SKILL_SUCCESS:
+            return{
+                ...state,
+                loading:false,
+                isDeleted:action.payload.success
+            }
+        case DELETE_SKILL_FAIL:
+            return{
+                ...state,
                 loading:false,
                 error:action.payload
             }

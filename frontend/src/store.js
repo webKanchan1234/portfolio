@@ -1,8 +1,8 @@
 import {createStore,combineReducers,applyMiddleware} from "redux"
 import {thunk} from "redux-thunk"
-import { addSkillReducer, allSkillsReducers } from "./reducers/skillsReducer"
+import { addSkillReducer, allSkillsReducers, skillReducer } from "./reducers/skillsReducer"
 import {composeWithDevTools} from "@redux-devtools/extension"
-import { addProjectReducer, allProjectsReducers } from "./reducers/projectReducer"
+import { addProjectReducer, allProjectsReducers, projectReducer } from "./reducers/projectReducer"
 import { allUsersReducers, loginUserReducer } from "./reducers/userReducer"
 
 
@@ -11,8 +11,10 @@ const reducer = combineReducers({
     user:loginUserReducer,
     skills:allSkillsReducers,
     skill:addSkillReducer,
+    deleteSkill:skillReducer,
     projects:allProjectsReducers,
-    project:addProjectReducer
+    project:addProjectReducer,
+    deleteProject:projectReducer
    
 })
 

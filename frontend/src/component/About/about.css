@@ -26,6 +26,9 @@
     color: white;
   }
 
+  #pro{
+    color: rgb(184, 181, 181);
+  }
 
   @media screen and (max-width:1200px){
     .about-container{

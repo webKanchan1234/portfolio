@@ -55,6 +55,15 @@ const userSchema = new mongoose.Schema({
     resume:{
         type:String
     },
+    portfolio:{
+        type:String
+    },
+    github:{
+        type:String
+    },
+    leetcode:{
+        type:String
+    },
     resetPasswordToken: String,
     resetPasswordExpire: Date,
 })

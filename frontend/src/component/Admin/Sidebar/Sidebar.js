@@ -6,14 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 function Sidebar() {
 
-  const logout = ()=>{
-    localStorage.removeItem("isAuthenticated")
-    localStorage.removeItem("role")
-    window.location.href = "/"
-  }
+  
   
   return (
     <>
+    
     {/* <MenuIcon className='menu' /> */}
       <Accordion  >
         <Accordion.Item eventKey="0" className='item'>
@@ -38,7 +35,6 @@ function Sidebar() {
             <div className="skill-link"><Link id="skill-link" to="/admin/messages">All Messages</Link></div>
           </Accordion.Body>
         </Accordion.Item>
-        <h3 id='logout' onClick={logout}>Logout</h3>
       </Accordion>
     </>
   );

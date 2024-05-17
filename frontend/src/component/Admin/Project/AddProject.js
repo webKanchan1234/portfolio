@@ -5,8 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useDispatch } from 'react-redux';
 import { addProject } from '../../../actions/projectAction';
+import { useAlert } from 'react-alert'
+import AdminHeader from '../AdminHeader/AdminHeader';
 
 const AddProject = () => {
+  const alert = useAlert()
   const dispatch = useDispatch()
   const [formData, setFormData] = useState({
     title: "",
@@ -47,10 +50,20 @@ const AddProject = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(addProject(formData))
+    setFormData({
+      title: "",
+      description: "",
+      github: "",
+      url: "",
+      image: ""
+    })
+    alert.success("Project added successfully")
     // console.log(formData)
   }
 
   return (
+    <>
+    <AdminHeader/>
     <div className='dashboard-container'>
       <div className="sidebar">
         <div className="overlay-content">
@@ -62,22 +75,22 @@ const AddProject = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Title</Form.Label>
-              <Form.Control type="text" name='title' placeholder="Enter Title" onChange={handleChange} />
+              <Form.Control type="text" value={formData.title} name='title' placeholder="Enter Title" onChange={handleChange} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Description</Form.Label>
-              <Form.Control type="text" name='description' placeholder="Enter Description" onChange={handleChange} />
+              <Form.Control type="text" value={formData.description} name='description' placeholder="Enter Description" onChange={handleChange} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>GitHub</Form.Label>
-              <Form.Control type="text" name='github' placeholder="Enter Github Url" onChange={handleChange} />
+              <Form.Control type="text" value={formData.github} name='github' placeholder="Enter Github Url" onChange={handleChange} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Live URL</Form.Label>
-              <Form.Control type="text" name='url' placeholder="Enter Live Url" onChange={handleChange} />
+              <Form.Control type="text" value={formData.url} name='url' placeholder="Enter Live Url" onChange={handleChange} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -97,6 +110,7 @@ const AddProject = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
