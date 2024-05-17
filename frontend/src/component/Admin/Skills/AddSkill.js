@@ -5,11 +5,11 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useDispatch, useSelector } from "react-redux"
 import { addSkill } from '../../../actions/skillsAction';
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert'
 import AdminHeader from '../AdminHeader/AdminHeader';
 
 const AddSkill = () => {
-  const alert = useAlert()
+  // const alert = useAlert()
   const dispatch = useDispatch()
   const [name, setName] = useState("")
   const [percentage, setPercentage] = useState()

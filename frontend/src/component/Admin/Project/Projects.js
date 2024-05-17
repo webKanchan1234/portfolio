@@ -6,11 +6,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { allProjects, deleteProject } from '../../../actions/projectAction'
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert'
 import AdminHeader from '../AdminHeader/AdminHeader';
 
 const Projects = () => {
-  const alert = useAlert()
+  // const alert = useAlert()
   const dispatch = useDispatch()
   const { projects } = useSelector(state => state.projects)
   const [refresh, setRefresh] = useState(false);
@@ -19,11 +19,11 @@ const Projects = () => {
   const handleProjectDelete = (id) => {
     console.log(id)
     dispatch(deleteProject(id)).then(() => {
-      alert.success("Project deleted successfully");
+      // alert.success("Project deleted successfully");
       setRefresh(prev => !prev); // Toggle refresh state to re-fetch skills
     })
       .catch((error) => {
-        alert.error("Failed to delete Project");
+        // alert.error("Failed to delete Project");
         console.error("Delete Project error: ", error);
       });
 

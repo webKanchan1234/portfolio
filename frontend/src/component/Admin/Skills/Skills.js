@@ -6,11 +6,11 @@ import Table from 'react-bootstrap/Table';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { allSkills, deleteSkill } from '../../../actions/skillsAction';
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert'
 import AdminHeader from '../AdminHeader/AdminHeader';
 
 const Skills = () => {
-  const alert = useAlert()
+  // const alert = useAlert()
   const dispatch = useDispatch()
   const { loading, skills, error } = useSelector(state => state.skills)
   const { success } = useSelector(state => state.deleteSkill)
@@ -20,11 +20,11 @@ const Skills = () => {
   const handleDeleteSkill = (id) => {
     dispatch(deleteSkill(id))
       .then(() => {
-        alert.success("Skill deleted successfully");
+        // alert.success("Skill deleted successfully");
         setRefresh(prev => !prev); // Toggle refresh state to re-fetch skills
       })
       .catch((error) => {
-        alert.error("Failed to delete skill");
+        // alert.error("Failed to delete skill");
         console.error("Delete skill error: ", error);
       });
   }

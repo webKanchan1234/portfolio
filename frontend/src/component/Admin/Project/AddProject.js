@@ -5,11 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useDispatch } from 'react-redux';
 import { addProject } from '../../../actions/projectAction';
-import { useAlert } from 'react-alert'
+// import { useAlert } from 'react-alert'
 import AdminHeader from '../AdminHeader/AdminHeader';
 
 const AddProject = () => {
-  const alert = useAlert()
+  // const alert = useAlert()
   const dispatch = useDispatch()
   const [formData, setFormData] = useState({
     title: "",
@@ -57,7 +57,7 @@ const AddProject = () => {
       url: "",
       image: ""
     })
-    alert.success("Project added successfully")
+    // alert.success("Project added successfully")
     // console.log(formData)
   }
 
