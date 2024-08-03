@@ -9,7 +9,7 @@
 /frontedn/coverage
 
 # production
-/frontedn/build
+# /frontedn/build
 
 # misc
 /backend/config/config.env
